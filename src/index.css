@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+body {
+  background-color: #050507;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+/* UTITILTY */
+.green {
+  color: #079211;
+}
+
+.btn_no_bg {
+  border: 1px solid #079211;
+  padding: 13px 20px;
+  background-color: transparent;
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn_download {
+  color: #808080;
+  padding: 13px 20px;
+  background-color: transparent;
+}
+
+.btn_bg {
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  background-color: #079211;
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn_no_bg:hover {
+  background-color: #079211;
+}
+
+.dflex_btw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.dflex_str {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.container_pd {
+  padding: 0 6rem;
+}
+/* UTITILTY */
+
+nav {
+  padding: 30px 6rem;
+}
+
+nav .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.Hero_section {
+  margin-top: 8rem;
+  height: max-content;
+  padding: 0 6rem;
+}
+
+.Hero_section h2 {
+  font-size: 38px;
+  line-height: 0;
+}
+
+.Hero_section h1 {
+  font-size: 88px;
+  line-height: 0;
+}
+
+.Hero_section p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #808080;
+  width: 45%;
+  line-height: 1.7;
+}
+
+.Footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
