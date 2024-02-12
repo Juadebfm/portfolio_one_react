@@ -38,10 +38,10 @@ const Services = () => {
             <div className="circle"></div>
             <PiStrategyThin size={60} className="box_icon" />
           </div>
-          <h3>Product Design</h3>
+          <h3>Frontend Developer</h3>
           <p>
-            I offer innovative and attention-grabbing product design services.
-            From initial ideation to implementation.
+            Specialize in responsive and interactive front-end development. With
+            a deep understanding of HTML, CSS, and JS.
           </p>
         </div>
         <div className="services_box">
@@ -49,10 +49,10 @@ const Services = () => {
             <div className="circle"></div>
             <PiStrategyThin size={60} className="box_icon" />
           </div>
-          <h3>Product Design</h3>
+          <h3>Brand Design</h3>
           <p>
-            I offer innovative and attention-grabbing product design services.
-            From initial ideation to implementation.
+            I help design strong and captivating brand strategies. Through
+            thorough research and market analysis.
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Hero = () => {
         Product Designer and Front-end Developer for 3 years.
       </p>
 
-      <div className="dflex_str">
+      <div className="dflex_str col_btns">
         <Button className="btn_bg" btnText="Email Me" />
         <Button
           className="btn_download"
