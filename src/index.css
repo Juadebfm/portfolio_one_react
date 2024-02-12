@@ -72,6 +72,7 @@ button {
 .container_pd {
   padding: 0 6rem;
 }
+
 /* UTITILTY */
 
 nav {
@@ -107,7 +108,98 @@ nav .logo {
   line-height: 1.7;
 }
 
+.Services_section {
+  height: 80vh;
+  margin-top: 8rem;
+}
+
+.Services_section p {
+  color: #808080;
+}
+
+.Services_heading {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.Services_line {
+  width: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.Services_line .line {
+  height: 3px;
+  width: 50px;
+  background-color: #079211;
+}
+
+.col {
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+  width: 360px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background-color: #079211;
+}
+
+.Services_boxes {
+  margin-top: 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.services_box {
+  background-color: #313131;
+  border-bottom: 3px solid #079211;
+  padding: 45px;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.services_box:hover {
+  box-shadow: 0px 0px 10px 0px #cccccc71;
+}
+
+.services_box .icons {
+  position: relative;
+  width: max-content;
+}
+
+.box_icon {
+  z-index: 10;
+}
+
+.services_box .circle {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 0;
+}
+
+.Blog_page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center center;
+  gap: 1rem;
+}
+
+.Blog_news_card {
+  background-color: rgba(128, 128, 128, 0.249);
+  height: 400px;
+}
+
 .Footer {
+  background-color: #050507;
   position: fixed;
   width: 100%;
   bottom: 0;
