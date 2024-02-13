@@ -203,12 +203,68 @@ nav .logo {
 
 .Work_section {
   min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .Work_section_container {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #313131;
+}
+
+.Work_section_head {
+  width: 100%;
+}
+
+.Work_section_head .col {
+  width: 80%;
+}
+
+.Work_section_head .Services_line {
+  width: 100%;
+}
+
+.Work_section_head .Services_line .green {
+  font-weight: bold;
+}
+
+.Work_section_head .col h2 {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 46px;
+}
+
+.Work_project_boxes {
+  display: grid;
+  place-items: center center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 3.5rem;
+}
+
+.Work_project_boxes .Work_project_box img {
+  width: 100%;
+}
+
+.Work_project_box {
+  position: relative;
+  cursor: pointer;
+}
+
+.project-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%); /* Initial grayscale effect */
+  transition: filter 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  filter: grayscale(0%) !important; /* Remove grayscale filter on hover */
 }
 
 .Footer {
