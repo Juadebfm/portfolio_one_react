@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
+import Searchbar from "../components/lcomp/Searchbar";
 
 const Blog = () => {
   const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     try {
@@ -20,14 +23,39 @@ const Blog = () => {
     }
   }, []);
 
+  const handleSearch = (input) => {
+    setSearchInput(input);
+
+    if (input === "") {
+      setFilteredData([]);
+    } else {
+      const filteredPosts = data.filter((post) =>
+        post.id.toString().includes(input)
+      );
+      setFilteredData(filteredPosts);
+    }
+  };
+
   return (
-    <main className="container_pd Blog_page">
-      {data.map((post) => (
-        <div key={post.id} className="Blog_news_card">
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
-        </div>
-      ))}
+    <main className="Blog_page_container container_pd">
+      <Searchbar onSearch={handleSearch} />
+      <div className="Blog_page">
+        {searchInput === ""
+          ? data.map((post) => (
+              <div key={post.id} className="Blog_news_card">
+                <span>{post.id}</span>
+                <h2>{post.title}</h2>
+                <p>{post.body}</p>
+              </div>
+            ))
+          : filteredData.map((post) => (
+              <div key={post.id} className="Blog_news_card">
+                <span>{post.id}</span>
+                <h2>{post.title}</h2>
+                <p>{post.body}</p>
+              </div>
+            ))}
+      </div>
     </main>
   );
 };

@@ -1,6 +1,8 @@
 import React from "react";
 import "../index.css";
 import Button from "./lcomp/Button";
+import { GoArrowUpRight } from "react-icons/go";
+
 import ProjectImage from "../assets/webdesign.png";
 
 const Work = () => {
@@ -29,6 +31,12 @@ const Work = () => {
               />
               <h3>Alana - Live data App</h3>
             </div>
+            <Button
+              btnText="See Project"
+              className="btn_no_bg_"
+              btnIcon={<GoArrowUpRight />}
+              space={" "}
+            />
           </div>
           <div className="Work_project_box">
             <div className="project_wrapper">
@@ -39,6 +47,12 @@ const Work = () => {
               />
               <h3>Wohoo - Weather App</h3>
             </div>
+            <Button
+              btnText="See Project"
+              className="btn_no_bg_"
+              btnIcon={<GoArrowUpRight />}
+              space={" "}
+            />
           </div>
           <div className="Work_project_box">
             <div className="project_wrapper">
@@ -49,6 +63,12 @@ const Work = () => {
               />
               <h3>Pagee - Real Estate UI Kit</h3>
             </div>
+            <Button
+              btnText="See Project"
+              className="btn_no_bg_"
+              btnIcon={<GoArrowUpRight />}
+              space={" "}
+            />
           </div>
           <div className="Work_project_box">
             <div className="project_wrapper">
@@ -59,6 +79,12 @@ const Work = () => {
               />
               <h3>Keikoko - Agency Web</h3>
             </div>
+            <Button
+              btnText="See Project"
+              className="btn_no_bg_"
+              btnIcon={<GoArrowUpRight />}
+              space={" "}
+            />
           </div>
         </div>
       </div>

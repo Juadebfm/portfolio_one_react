@@ -7,6 +7,7 @@ body {
   font-size: 17px;
   padding: 0;
   margin: 0;
+  overflow-x: hidden !important;
 }
 
 ul {
@@ -35,6 +36,15 @@ button {
   padding: 13px 20px;
   background-color: transparent;
   color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn_no_bg_ {
+  padding: 0px 20px 13px 0px;
+  background-color: transparent;
+  color: #079211;
+  font-size: 20px;
+  font-weight: 600;
   transition: 0.2s all ease-in-out;
 }
 
@@ -251,9 +261,9 @@ nav .logo {
   cursor: pointer;
 }
 
-.project-wrapper {
-  position: relative;
-  overflow: hidden;
+.project_wrapper h3 {
+  font-size: 28px;
+  text-transform: capitalize;
 }
 
 .project-image {
@@ -266,6 +276,133 @@ nav .logo {
 .project-image:hover {
   filter: grayscale(0%) !important; /* Remove grayscale filter on hover */
 }
+
+.Testimonials {
+  min-height: 80vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.Testimonial_details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Testimonial_details .Services_line {
+  width: max-content;
+}
+
+.Testimonial_details h2 {
+  font-size: 46px;
+}
+
+.Testimonial_container.dflex_btw {
+  flex-direction: column;
+}
+
+/* Swiper */
+
+.swiper {
+  width: 100%;
+  padding: 0px 6rem;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: max-content;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+  flex: 0 0 100%;
+}
+
+.active {
+  opacity: 1;
+}
+
+.swiper-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.prev-btn,
+.next-btn {
+  z-index: 1;
+}
+
+.Searchbar {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  gap: 1rem;
+}
+
+.Searchbar input {
+  padding: 1rem 1.2rem;
+  width: 30%;
+  background-color: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #079211;
+  outline: none;
+}
+
+.Searchbar input:active,
+.Searchbar input:focus {
+  outline: 1px solid #079211;
+  background-color: #eeeeee13;
+}
+
+.Searchbar button {
+  border: 1px solid #079211;
+  padding: 1rem 1.2rem;
+  background-color: transparent;
+  color: white;
+  width: 150px;
+  transition: 0.2s all ease-in-out;
+}
+
+.Searchbar button:hover {
+  background-color: #079211;
+}
+
+.Blog_news_card {
+  padding: 35px;
+}
+
+.Blog_news_card span {
+  color: red;
+  font-weight: bold;
+}
+
 
 .Footer {
   background-color: #050507;
@@ -337,6 +474,36 @@ nav .logo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 25px;
+  }
+
+  .Work_section_head {
+    flex-direction: column;
+  }
+
+  .Work_project_boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn_no_bg {
+    width: 100%;
+  }
+
+  .Work_section_head .col h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 30px;
+  }
+
+  .Work_section_container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .Blog_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center center;
+    gap: 1rem;
   }
 }
 
