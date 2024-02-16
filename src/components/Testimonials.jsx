@@ -1,5 +1,5 @@
 import React from "react";
-// import Carousel from "./lcomp/Carousel";
+import MyCarousel from "./lcomp/SimpleSlider";
 
 const Testimonials = () => {
   return (
@@ -13,8 +13,7 @@ const Testimonials = () => {
           </div>
           <h2>My happy clients.</h2>
         </div>
-
-        {/* <Carousel /> */}
+        <MyCarousel />
       </div>
     </section>
   );

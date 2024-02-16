@@ -278,9 +278,10 @@ nav .logo {
 }
 
 .Testimonials {
-  min-height: 80vh;
+  min-height: max-content;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: #0a0a0f;
 }
 
 .Testimonial_details {
@@ -304,54 +305,44 @@ nav .logo {
 }
 
 /* Swiper */
-
-.swiper {
-  width: 100%;
-  padding: 0px 6rem;
+.slider {
+  height: 25vh;
+  width: 50%;
+  margin-bottom: 5rem;
 }
 
-.swiper-container {
-  position: relative;
+.slider_box {
   width: 100%;
-  overflow: hidden;
-}
-
-.swiper-wrapper {
-  width: max-content;
+  height: 100%;
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.swiper-slide {
-  flex: 0 0 100%;
+.slider_box p {
+  width: 65%;
+  color: #808080;
 }
 
-.active {
-  opacity: 1;
+.testimonee {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 200px;
 }
 
-.swiper-container button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  color: #333;
-  cursor: pointer;
+.testimonee > div {
+  width: 100% !important;
 }
 
-.prev-btn {
-  left: 0;
+.testimonee > div span:last-child {
+  display: block;
+  font-size: 12px;
 }
 
-.next-btn {
-  right: 0;
-}
-
-.prev-btn,
-.next-btn {
-  z-index: 1;
+.testimonee img {
+  width: 50px;
+  height: 50px;
 }
 
 .Searchbar {
@@ -403,16 +394,46 @@ nav .logo {
   font-weight: bold;
 }
 
+.CTA {
+  padding: 5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CTA p {
+  font-size: 13px;
+  color: #808080;
+}
 
 .Footer {
-  background-color: #050507;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
+  background-color: #050507f2;
   padding-top: 50px;
   padding-bottom: 50px;
   z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Footer .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.Footer hr {
+  background-color: #313131;
+  color: #313131;
+  height: 0.5px;
+  margin-bottom: 30px;
+}
+
+.Pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 900px) {
@@ -504,6 +525,54 @@ nav .logo {
     grid-template-columns: repeat(1, 1fr);
     place-items: center center;
     gap: 1rem;
+  }
+
+  .slider {
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .testimonee {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 70vw;
+  }
+
+  .CTA {
+    padding: 5rem 25px;
+    flex-direction: column;
+  }
+
+  .CTA .btn_bg {
+    margin-top: 18px;
+    width: 100%;
+  }
+
+  .Footer {
+    flex-direction: column;
+    padding: 3rem 25px;
+  }
+
+  .Footer hr {
+    display: none;
+  }
+
+  .Searchbar {
+    flex-direction: column;
+  }
+
+  .Searchbar input,
+  .Searchbar button {
+    width: 90%;
+  }
+
+  .Pagination {
+    justify-content: center;
+  }
+
+  .Pagination button {
+    font-size: 10px;
   }
 }
 
